@@ -23,15 +23,8 @@ export const routes: Routes = [
     ],
   },
   {
-    path: 'cadastro',
-    loadComponent: () => import('./cadastro/cadastro.page').then(m => m.CadastroPage),
-  },
-  {
-    path: 'detalhe',
-    loadComponent: () => import('./detalhe/detalhe.page').then(m => m.DetalhePage),
-  },
-  {
-    path: '**',
-    redirectTo: 'feed',
-  },
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full',
+  }
 ];
